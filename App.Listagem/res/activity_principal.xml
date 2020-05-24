@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Principal"
+    tools:showIn="@layout/app_bar_menu_lateral">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints,RtlHardcoded">
+
+            <Switch
+                android:id="@+id/swt_Curso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="#fff"
+                android:fontFamily="sans-serif-medium"
+                android:text="Filtrar meu curso "
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:thumbTint="@color/design_default_color_primary"
+                tools:ignore="HardcodedText" />
+
+            <Switch
+                android:id="@+id/swt_Mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:checked="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Filtrar mês "
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:thumbTint="@color/design_default_color_primary"
+                tools:checked="true"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ltvNoticias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
